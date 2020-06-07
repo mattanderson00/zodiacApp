@@ -3,8 +3,7 @@
 <head>
      <title>Zodiac App</title>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-
+     <meta name="viewport" content="width=device-width,initial-scale=1">
      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
      <link rel="stylesheet" type="text/css" href="/css/styles.css">
@@ -16,8 +15,7 @@
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <a class="navbar-brand" href="/">Zodiac App</a>
 </nav>
-     <div class="container">
-     	 <h1>Welcome to Zodiac App</h1>
+     <div class="container">     	 
      	 <div class="row">
      	 	<div class="col-md-4">
      	 		<img src="/images/zodiac-signs.jpg" class="img-responsive">
@@ -28,12 +26,15 @@
      	 				placeholder="Type zodiac name ...">
      	 			</div>
      	 			<div class="form-group">
-     	 				<button class="btn btn-danger" type="button">Find</button>
+     	 				<button class="btn btn-danger" onclick="getData()" type="button">Find</button>
      	 			</div>
      	 		</form>
      	 	</div>
-     	 	<div class="col-md-4">
-     	 		<p>Result will display here</p>
+     	 	 <div class="col-md-4">
+                    <h2 id="name"></h2>
+                    <h5 id="date"></h5>
+                    <img id="img">
+     	 		<p id="text-result"></p>
      	 	</div>
      	 </div>
      </div>
